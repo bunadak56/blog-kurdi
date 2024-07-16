@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloga Kurdî</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Bloga Kurdî Logo">
+            <h1>Bloga Kurdî</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Mal</a></li>
+                <li><a href="#categories">Kategorî</a></li>
+                <li><a href="#authors">Nivîskar</a></li>
+                <li><a href="#popular">Herî Xwendî</a></li>
+                <li><a href="#contact">Têkilî</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Lêgerîn...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bi xêr hatî Bloga Kurdî</h2>
+            <p>Li vir hûn ê agahdariyên herî dawî, gotar û nûçeyên bi zimanê kurdî bibînin.</p>
+        </section>
+
+        <section id="featured-posts">
+            <h2>Gotarên Taybet</h2>
+            <div class="post-grid">
+                <!-- Burada öne çıkan gönderiler yer alacak -->
+            </div>
+        </section>
+    </main>
+        <section id="categories">
+            <h2>Kategorî</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="culture.jpg" alt="Çand">
+                    <h3>Çand</h3>
+                    <p>Gotarên li ser çand û kevneşopiyên kurdî</p>
+                </div>
+                <div class="category-item">
+                    <img src="literature.jpg" alt="Wêje">
+                    <h3>Wêje</h3>
+                    <p>Helbest, çîrok û romanên kurdî</p>
+                </div>
+                <div class="category-item">
+                    <img src="history.jpg" alt="Dîrok">
+                    <h3>Dîrok</h3>
+                    <p>Bûyerên dîrokî yên girîng ên kurdan</p>
+                </div>
+                <div class="category-item">
+                    <img src="politics.jpg" alt="Siyaset">
+                    <h3>Siyaset</h3>
+                    <p>Nûçe û analîzên siyasî</p>
+                </div>
+                <div class="category-item">
+                    <img src="art.jpg" alt="Huner">
+                    <h3>Huner</h3>
+                    <p>Hunera kurdî ya kevn û nûjen</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="authors">
+            <h2>Nivîskarên Me</h2>
+            <div class="author-list">
+                <div class="author-item">
+                    <img src="author1.jpg" alt="Nivîskar 1">
+                    <h3>Berivan Ehmed</h3>
+                    <p>Nivîskara çîrok û romanên kurdî</p>
+                </div>
+                <div class="author-item">
+                    <img src="author2.jpg" alt="Nivîskar 2">
+                    <h3>Azad Mihemed</h3>
+                    <p>Rojnamevan û nivîskarê siyasî</p>
+                </div>
+                <div class="author-item">
+                    <img src="author3.jpg" alt="Nivîskar 3">
+                    <h3>Rojîn Hesenî</h3>
+                    <p>Lêkolîner û nivîskara dîrokî</p>
+                </div>
+            </div>
+        </section>
+        <section id="popular">
+            <h2>Herî Xwendî</h2>
+            <div class="popular-posts">
+                <article class="post-item">
+                    <img src="post1.jpg" alt="Post 1">
+                    <h3>Dîroka Kurdistanê: Ji Medya heta îro</h3>
+                    <p>Nivîskar: Azad Mihemed</p>
+                    <p>Xwendin: 1500</p>
+                </article>
+                <article class="post-item">
+                    <img src="post2.jpg" alt="Post 2">
+                    <h3>Festîvala Newrozê li Amedê</h3>
+                    <p>Nivîskar: Berivan Ehmed</p>
+                    <p>Xwendin: 1200</p>
+                </article>
+                <article class="post-item">
+                    <img src="post3.jpg" alt="Post 3">
+                    <h3>Bandora Ehmedê Xanî li ser wêjeya kurdî</h3>
+                    <p>Nivîskar: Rojîn Hesenî</p>
+                    <p>Xwendin: 1000</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Têkilî</h2>
+            <form id="contact-form">
+                <label for="name">Nav:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-peyam:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Peyam:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Bişîne</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Der barê Bloga Kurdî</h3>
+                <p>Bloga Kurdî platformeke nûçe û agahdariyê ye ku bi zimanê kurdî tê weşandin. Armanca me belavkirina çand, wêje û dîroka kurdî ye.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Girêdanên Bilez</h3>
+                <ul>
+                    <li><a href="#home">Mal</a></li>
+                    <li><a href="#categories">Kategorî</a></li>
+                    <li><a href="#authors">Nivîskar</a></li>
+                    <li><a href="#popular">Herî Xwendî</a></li>
+                    <li><a href="#contact">Têkilî</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Têkilî</h3>
+                <p><i class="fas fa-phone"></i> &nbsp; 123-456-789</p>
+                <p><i class="fas fa-envelope"></i> &nbsp; info@blogakurdi.com</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Bloga Kurdî. Hemû maf parastî ne.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

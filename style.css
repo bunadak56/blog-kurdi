@@ -1,0 +1,519 @@
+/* Reset ve genel stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header stili */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+.search-box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-box input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Ana içerik stili */
+main {
+    margin-top: 80px; /* Header'ın yüksekliği kadar boşluk bırak */
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Öne çıkan gönderiler stili */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.post-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-item:hover {
+    transform: translateY(-5px);
+}
+
+.post-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-item h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #2c3e50;
+}
+
+.post-item p {
+    padding: 0 10px 10px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Kategoriler stili */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category-item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.category-item h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.category-item p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    padding: 0 10px 10px;
+}
+
+/* Yazarlar stili */
+.author-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.author-item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.author-item:hover {
+    transform: translateY(-5px);
+}
+
+.author-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.author-item h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.author-item p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    padding: 0 10px 20px;
+}
+
+/* En çok okunan yazılar stili */
+.popular-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.popular-posts .post-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.popular-posts .post-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.popular-posts .post-item h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #2c3e50;
+}
+
+.popular-posts .post-item p {
+    padding: 0 10px 10px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* İletişim formu stili */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer stili */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 300px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.footer-section.links ul {
+    list-style-type: none;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+    color: #3498db;
+}
+
+.footer-section.contact .social-media {
+    margin-top: 20px;
+}
+
+.footer-section.contact .social-media a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section.contact .social-media a:hover {
+    background-color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #34495e;
+}
+
+/* Responsive tasarım için medya sorguları */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        font-size: 0.9rem;
+    }
+
+    .category-item,
+    .author-item {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        float: none;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .search-box {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .post-grid,
+    .popular-posts {
+        grid-template-columns: 1fr;
+    }
+
+    .category-list,
+    .author-list {
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        width: 40px;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .category-item,
+    .author-item {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #contact-form {
+        padding: 10px;
+    }
+
+    .footer-section {
+        padding: 0 10px;
+    }
+}
+
+/* Yazı tipi optimizasyonu */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* Performans optimizasyonu */
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.lazy-load.is-loaded {
+    opacity: 1;
+}
+
+/* Erişilebilirlik geliştirmeleri */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
